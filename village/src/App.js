@@ -31,12 +31,18 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Link to="/">Smurf List</Link>
+        <Link to="/smurf-form">Add Smurf</Link>
         <Route
           exact
           path="/"
           render={(props) => <Smurfs {...props} smurfs={this.state.smurfs} />}
         />
-        <SmurfForm />
+        <Route
+          exact
+          path="/smurf-form"
+          component={SmurfForm}
+        />
       </div>
     );
   }
