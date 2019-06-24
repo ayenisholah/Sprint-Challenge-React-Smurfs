@@ -3,3 +3,30 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.home-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.home-image {
+  width: 100%;
+  min-width: 1032px;
+}
+
+.home-button {
+  margin-top: -16px;
+  width: 115px;
+}
+
+.smurf {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
